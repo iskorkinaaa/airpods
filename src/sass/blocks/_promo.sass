@@ -12,5 +12,22 @@
       left: 0
       right: 0
       width: 100%
-      background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%)
+      
       z-index: -2
+
+.promo__img:has(.color--blue.content_item--active)::before
+  background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%)
+.promo__img:has(.color--red.content_item--active)::before
+  background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0.00) 100%)
+.promo__img:has(.color--green.content_item--active)::before
+  background: linear-gradient(180deg, #ddead9 0%, rgba(235, 235, 235, 0.00) 100%)
+.promo__img:has(.color--black.content_item--active)::before
+  background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0.00) 100%)
+.promo__img:has(.color--white.content_item--active)::before
+  background: linear-gradient(180deg, #fafafa 0%, rgba(235, 235, 235, 0.00) 100%)
+
+.content_item
+  display: none
+
+.content_item.content_item--active
+  display: inline-block
